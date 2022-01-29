@@ -1,0 +1,27 @@
+GET http://localhost:5000/Users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjgsIm5hbWUiOiJzZWxlbmEiLCJlbWFpbCI6InRoMkBnbWFpbC5jb20iLCJpYXQiOjE2NDM0MzcwNjcsImV4cCI6MTY0MzQzNzA4N30.-2ZrkqDlIyg14JEJ2RavYupvriibaLtAx6TkKT5heTs
+###
+POST http://localhost:5000/Users
+Content-Type: application/json
+
+{
+    "name": "selena",
+    "email": "th2@gmail.com",
+    "password": "212",
+    "confPassword": "212"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "th2@gmail.com",
+    "password": "212"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE  http://localhost:5000/logout
