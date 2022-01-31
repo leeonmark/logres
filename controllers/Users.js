@@ -78,6 +78,7 @@ export const Logout = async (req, res) => {
             id: userId
         }
     });
+    res.json({ msg: "SEE YA!!" });
     res.clearCookie('refreshToken');
     return res.sendStatus(200);
 }
